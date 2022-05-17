@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./asset_division_worksheet.css">
+        <script src="./asset_division_worksheet.js" async></script>
+    </head>
+
+    <body>
+        <div class="non_notes_container">
+            <div class="top_container">
+                <div id="heading">
+                    <h1>Commonwealth of Massachusetts</h1>
+                        <h2>The Trial Court</h2>
+                        <h2>Probate and Family Court Department</h2>
+                </div>
+
+                <div class="court_info">
+                    <div class="court_info division_docket">
+                        <label for="division">
+                            <input id="division_input" name="division_text" type="text" autocomplete="off"> Division 
+                        </label>
+
+                        <label for="docket_no">Docket No.
+                            <input id="docket_no_input" name="docket_no_text" type="text" autocomplete="off">
+                        </label>
+                    </div>
+                    
+                <div class="court_info" id="case_name">
+                    <div class="container_plaintiff">
+                            <input id="plaintiff_petitioner_input" name="plaintiff_petitioner_text" type="text" autocomplete="off">
+                            <label for="plaintiff_petitioner">Plaintiff / Petitioner
+                            </label>
+                    </div>
+
+                        <span>v.</span>
+
+                        <div class="container_defendant">
+                            <input id="defendant_petitioner_input" name="defendant_petitioner_text" type="text" autocomplete="off">
+                            <label for="defendant_petitioner">Defendant / Petitioner
+                            </label>
+                        </div>
+                </div> 
+
+                <div class="court_info dates">
+                        <label for="date_of_marriage">Date of Marriage:
+                            <input id="date_of_marriage_input" name="date_of_marriage_text" type="date" autocomplete="off">
+                        </label>
+
+                        
+                        <label for="date_of_separation">Date of Separation:
+                            <input id="date_of_separation_input" name="date_of_separation_text" type="date" autocomplete="off">
+                        </label>
+
+                        <label for="date_of_preparation">Date of Preparation:
+                            <input id="date_of_preparation_input" name="date_of_preparation_text" type="date" autocomplete="off">
+                        </label>
+
+                        <label for="preparer">Preparer:
+                            <input id="preparer_input" name="preparer_text" type="text" autocomplete="off">
+                        </label>
+                </div>
+            </div>
+
+            <div id="asset_division_schedule_heading">
+                <h1>ASSET DIVISION SCHEDULE</h1> 
+            </div> 
+
+            <div class="main">
+                <div class="headings">
+                    <h1>ASSETS</h1>
+                </div>
+                <div class="headings">
+                    <h1>FAIR MARKET VALUE</h1>
+                </div>
+                <div class="headings">
+                    <h1>DEBT</h1>
+                </div>
+                <div class="headings">
+                    <h1>EQUITY</h1>
+                </div>
+                <div class="headings">
+                    <input id="main_plaintiff_heading_input" class="mirrored_input_plaintiff" type="text" autocomplete="off"> 
+                </div>
+                <div class="headings">
+                    <input id="main_defendant_heading_input" class="mirrored_input_defendant" type="text" autocomplete="off">
+                </div>
+                <div class="headings percentToP_column">
+                    <h1>% TO P</h1>
+                </div>
+                
+                <div class="grid_cell asset_column" id="row1_column1"></div>
+                <div class="grid_cell" id="row1_column2"></div>
+                <div class="grid_cell" id="row1_column3"></div>
+                <div class="grid_cell" id="row1_column4"></div>
+                <div class="grid_cell" id="row1_column5"></div>
+                <div class="grid_cell" id="row1_column6"></div>
+                <div class="grid_cell" id="row1_column7"></div>
+
+                <div class="grid_cell asset_column" id="row2_column1"></div>
+                <div class="grid_cell" id="row2_column2"></div>
+                <div class="grid_cell" id="row2_column3"></div>
+                <div class="grid_cell" id="row2_column4"></div>
+                <div class="grid_cell" id="row2_column5"></div>
+                <div class="grid_cell" id="row2_column6"></div>
+                <div class="grid_cell" id="row2_column7"></div>
+
+                <div class="grid_cell asset_column" id="row3_column1"></div>
+                <div class="grid_cell" id="row3_column2"></div>
+                <div class="grid_cell" id="row3_column3"></div>
+                <div class="grid_cell" id="row3_column4"></div>
+                <div class="grid_cell" id="row3_column5"></div>
+                <div class="grid_cell" id="row3_column6"></div>
+                <div class="grid_cell" id="row3_column7"></div>
+
+                <div class="grid_cell asset_column" id="row4_column1"></div>
+                <div class="grid_cell" id="row4_column2"></div>
+                <div class="grid_cell" id="row4_column3"></div>
+                <div class="grid_cell" id="row4_column4"></div>
+                <div class="grid_cell" id="row4_column5"></div>
+                <div class="grid_cell" id="row4_column6"></div>
+                <div class="grid_cell" id="row4_column7"></div>
+
+                <div class="grid_cell asset_column" id="row5_column1"></div>
+                <div class="grid_cell" id="row5_column2"></div>
+                <div class="grid_cell" id="row5_column3"></div>
+                <div class="grid_cell" id="row5_column4"></div>
+                <div class="grid_cell" id="row5_column5"></div>
+                <div class="grid_cell" id="row5_column6"></div>
+                <div class="grid_cell" id="row5_column7"></div>
+
+                <div class="grid_cell asset_column" id="row6_column1"></div>
+                <div class="grid_cell" id="row6_column2"></div>
+                <div class="grid_cell" id="row6_column3"></div>
+                <div class="grid_cell" id="row6_column4"></div>
+                <div class="grid_cell" id="row6_column5"></div>
+                <div class="grid_cell" id="row6_column6"></div>
+                <div class="grid_cell" id="row6_column7"></div>
+
+                <div class="grid_cell asset_column" id="row7_column1"></div>
+                <div class="grid_cell" id="row7_column2"></div>
+                <div class="grid_cell" id="row7_column3"></div>
+                <div class="grid_cell" id="row7_column4"></div>
+                <div class="grid_cell" id="row7_column5"></div>
+                <div class="grid_cell" id="row7_column6"></div>
+                <div class="grid_cell" id="row7_column7"></div>
+
+
+
+                <div class="footer_grid_cell" id="total_label">
+                    <label>TOTALS </label>
+                    <span>(Includes SUB-TOTALS from additional pages, as applicable)</span>
+                </div>
+                <div class="footer_grid_cell runningTotalInputCell" id="market_value_total">
+                    <input id="main_market_value_total_input" type="text" placeholder="0.00" autocomplete="off" readonly="">
+                </div>
+                <div class="footer_grid_cell runningTotalInputCell" id="debt_total">
+                    <input id="main_debt_total_input" type="text" placeholder="0.00" autocomplete="off" readonly="">
+                </div>
+                <div class="footer_grid_cell runningTotalInputCell" id="equity_total">
+                    <input id="main_equity_total_input" type="text" placeholder="0.00" autocomplete="off" readonly="">
+
+                </div>
+                <div class="footer_grid_cell runningTotalInputCell" id="plaintiff_total">
+                    <input id="main_plaintiff_total_input" type="text" placeholder="0.00" autocomplete="off" readonly="">
+
+                </div>
+                <div class="footer_grid_cell runningTotalInputCell" id="defendant_total">
+                    <input id="main_defendant_total_input" type="text" placeholder="0.00" autocomplete="off" readonly="">
+
+                </div>
+                <div class="footer_grid_cell" >
+
+                </div>
+            </div>
+
+            <div id="hiddenRowForPercentageFields">
+                <div class="percentageFields"></div>
+                <div class="percentageFields"></div>
+                <div class="percentageFields"></div>
+                <div class="percentageFields"></div>
+                <div class="percentageFields totalPercent">
+                    <input id="plaintiffPercentage_input" type="text" name="plaintiffPercentage" autocomplete="off" readonly=""><span>%</span>
+                </div>
+                <div class="percentageFields totalPercent">
+                    <input id="defendantPercentage_input" type="text" name="defendantPercentage" autocomplete="off" readonly=""><span>%</span>
+                </div>
+                <div class="percentageFields"></div>
+            </div>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            
+            <div id="asset_division_schedule_heading">
+                <h1>ASSET DIVISION SCHEDULE (Table 2) </h1> 
+            </div> 
+
+            <div class="table2">
+                <div class="headings">
+                    <h1>ASSETS</h1>
+                </div>
+                <div class="headings">
+                    <h1>FAIR MARKET VALUE</h1>
+                </div>
+                <div class="headings">
+                    <h1>DEBT</h1>
+                </div>
+                <div class="headings">
+                    <h1>EQUITY</h1>
+                </div>
+                <div class="headings">
+                    <input id="plaintiff_heading" class="mirrored_input_plaintiff" type="text" autocomplete="off"> 
+                </div>
+                <div class="headings">
+                    <input id="defendant_heading" class="mirrored_input_defendant" type="text" autocomplete="off">
+                </div>
+                <div class="headings percentToP_column">
+                    <h1>% TO P</h1>
+                </div>
+                <div class="columns" id="asset_column">
+                </div>
+                <div class="columns" id="fair_market_value_column">
+                </div>
+                <div class="columns" id="debt_column">
+                </div>
+                <div class="columns" id="equity_column">
+                </div>
+                <div class="columns" id="plaintiff_column">
+                </div>
+                <div class="columns" id="defendant_column">
+                </div>
+                <div class="columns" id="percentToP_column">
+                </div>
+                <div class="subtotals_row" id="subtotalColumn">
+                    <label>SUBTOTALS (Table 2)</label>
+                </div>
+                <div class="subtotals_row" id="market_value_total">
+                    <input id="table2_market_value_subtotal" type="text" placeholder="0.00" autocomplete="off" readonly="">
+                </div>
+                <div class="subtotals_row" id="debt_total">
+                    <input id="table2_debt_subtotal" type="text" placeholder="0.00" autocomplete="off" readonly="">
+                </div>
+                <div class="subtotals_row" id="equity_total">
+                    <input id="table2_equity_subtotal" type="text" placeholder="0.00" autocomplete="off" readonly="">
+                </div>
+                <div class="subtotals_row" id="plaintiff_total">
+                    <input id="table2_plaintiff_subtotal" type="text" placeholder="0.00" autocomplete="off" readonly="">
+                </div>
+                <div class="subtotals_row" id="defendant_total">
+                    <input id="table2_defendant_subtotal" type="text" placeholder="0.00" autocomplete="off" readonly="">
+                </div>
+                <div class="subtotals_row">
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        
+        <div class="notes_container">
+            <div id="explanatory_notes_header">
+                <h1>ASSET DIVISION SCHEDULE</h1>
+                <h1>EXPLANATORY NOTES</h1>
+            </div> 
+
+            <h1>#   Explanation of Notation</h1>
+        </div>
+        
+    </body>
+</html>
